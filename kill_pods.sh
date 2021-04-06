@@ -1,10 +1,6 @@
 #!/bin/sh
-# Can be added for authentication only  once
-# echo `az account set --subscription 5f1a7952-1f11-41a0-b6bf-7a8b70db10b2`
-# echo `az aks get-credentials --resource-group adp-dev-uksouth --name adp-dev-uksouth`
 timeout=10
 namespace='services-uksouth'
-#namespace='geneva'
 while true
 do
    echo "Going to kill pods $(date)"
